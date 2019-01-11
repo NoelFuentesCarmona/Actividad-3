@@ -103,6 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="lbMontoapagar" destination="CEA-pe-ype" id="e0f-X8-i9f"/>
                         <outlet property="lbPropina" destination="RK5-6F-f6k" id="hs5-D6-tbf"/>
                         <outlet property="txtMontoapagar" destination="lJc-Sy-xVP" id="qGz-pL-fET"/>
                         <outlet property="txtPropina" destination="Igv-kk-1H2" id="P9q-tY-gBd"/>
