@@ -23,10 +23,13 @@ class ViewController: UIViewController {
         var porcientopropina = Double(txtPropina.text!);
         var montoapagar = Double(txtMontoapagar.text!);
         if porcientopropina != nil && montoapagar != nil {
-            var totalpropina =  (( porcientopropina! * 100) / montoapagar!)
+            if Int(porcientopropina!)  > 0 && Int(montoapagar!) > 0
+            {
+            var totalpropina =  (( porcientopropina! * montoapagar! ) / 100)
             lbPropina.text = String(totalpropina)
             
             lbMontoapagar.text = String(totalpropina + montoapagar!)
+            }
         }
         
         
