@@ -12,11 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var txtMontoapagar: UITextField!
     @IBOutlet weak var txtPropina: UITextField!
+    @IBOutlet weak var lbPropina: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    @IBAction func btnCalcularPropina(_ sender: UIButton) {
+        
+        var porcientopropina = Double(txtPropina.text!);
+        var montoapagar = Double(txtMontoapagar.text!);
+        if porcientopropina != nil && montoapagar != nil {
+            var totalpropina =  (( porcientopropina! * 100) / montoapagar!)
+            lbPropina.text = String(totalpropina)
+        }
+        
+        
+    }
+    
 
 }
 
